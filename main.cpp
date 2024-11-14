@@ -63,13 +63,6 @@ static int Run() {
     return EXIT_SUCCESS;
 }
 
-#ifdef WIN32
-int APIENTRY
-WinMain(HINSTANCE hInst, HINSTANCE hInstPrev, PSTR cmdline, int cmdshow) {
-    return Run();
-}
-#else
 int main(int argc, char const *argv[]) {
     return Run();
 }
-#endif
